@@ -2,6 +2,8 @@
     margin: 0px;
 }
 
+/* --------------------background image------------------*/
+
 .headerImage{
     background-image: url(../assets/images/homePageHeader.png);
     width: 100%;
@@ -18,6 +20,8 @@
     padding: 10px;
     
 }
+
+/* ---------------------background of nav-----------------*/
 .navBarBackground{
     display: flex;
     flex-direction: row;
@@ -38,8 +42,11 @@
     
 }
 
-.linksInNav{
+/* ---------------------nav bar -- jusst the home f and con-----------------*/
 
+.linksInNav{ /* jy moet uit figure hoe om die nav bar te center always*/
+    justify-content: center;
+    
     text-align: center;
     width: 100%;
     padding: 15px;
@@ -60,12 +67,12 @@
 }
 
 .linksInNav a:hover{
-    color: rgb(219, 11, 11);
+   
     animation-name: linkAnimation;
     animation-duration: 0.8s;
 }
 
-@keyframes linkAnimation {
+@keyframes linkAnimation { /*makk die animation cooler en maak hom stick*/
     from{
         background-color: none;
     }
@@ -87,4 +94,28 @@
     top: 0px;
    }
  */
+}
+
+/* ---------------------bottom font embed------------------*/
+.logoSlogan{
+    position: relative;
+    top: 2000px;
+    
+
+}
+
+/* figure uit hoe om die text te doen*/
+
+.logoSlogan p{
+
+
+     font-family: "Porter Sans Block";
+     font-size: 20px;
+     color: red;
+ 
+}
+
+@font-face {
+    font-family: 'Porter Sans Block';
+    src: url(../assets/fonts/porter_sans_block/porter-sans-inline-block-webfont.woff)format("woff");
 }
