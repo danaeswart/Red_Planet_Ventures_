@@ -10,13 +10,20 @@
     padding: 0%;
 }
 
-.navBarBackground img{
+.navImg img{
     position: relative;
     float: left;
     width: 266px;
     height: 48px;
+    padding: 10px;
+    
 }
 .navBarBackground{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
     background-color: white;
     width: 85%;
     height: 75px;
@@ -24,6 +31,7 @@
     float: none;
     position: absolute;
     left: 50%;
+    right: 50%;
     transform: translate(-50%, -50%);
     margin-top: 70px;
     border-radius: 25px;
@@ -31,17 +39,52 @@
 }
 
 .linksInNav{
+
     text-align: center;
     width: 100%;
+    padding: 15px;
+    
    
 }
 
 .linksInNav a{
     display: inline;
     text-decoration: none;
-    color: rgb(147, 146, 150);
+    color: rgb(21, 8, 75);
     text-align: center;
     padding: 12px;
     font-size: 20px;
+    border-radius: 15px;
     
+    
+}
+
+.linksInNav a:hover{
+    color: rgb(219, 11, 11);
+    animation-name: linkAnimation;
+    animation-duration: 0.8s;
+}
+
+@keyframes linkAnimation {
+    from{
+        background-color: none;
+    }
+    to{
+        background-color: rgb(102, 77, 172);
+        border-radius: 15px;
+    }
+
+    from{
+        color: rgb(21, 8, 75);
+    }
+    to{
+        color: white;
+    }
+   /*from{
+    top: auto;
+   }
+   to{
+    top: 0px;
+   }
+ */
 }
