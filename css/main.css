@@ -1,5 +1,8 @@
-.body{
+body{
+    
     margin: 0px;
+    padding: 0px;
+  
 }
 
 /* --------------------background image------------------*/
@@ -7,9 +10,8 @@
 .headerImage{
     background-image: url(../assets/images/homePageHeader.png);
     width: 100%;
-    height: 600px;
-    margin: 0px; /* i cant seem to make it full screen */
-    padding: 0%;
+    height: 50em;
+    
 }
 
 .navImg img{
@@ -97,25 +99,53 @@
 }
 
 /* ---------------------bottom font embed------------------*/
-.logoSlogan{
-    position: relative;
-    top: 2000px;
+.logoSlogen {
+    position: absolute;
+    top: 90%;
+    left: 6%;
+    
     
 
 }
 
+.logoSlogen p{
+    font-family:"Poppins",sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(94, 42, 143);
+    margin-top: -15px;
+    padding: 0px;
+}
+
 /* figure uit hoe om die text te doen*/
 
-.logoSlogan p{
+.logoSlogen h1{
 
 
      font-family: "Porter Sans Block";
-     font-size: 20px;
+     font-size: 48px;
      color: red;
+     
+     
  
+}
+.ventureTitle{
+    margin-top: -20px;
 }
 
 @font-face {
     font-family: 'Porter Sans Block';
     src: url(../assets/fonts/porter_sans_block/porter-sans-inline-block-webfont.woff)format("woff");
+
+    
+}
+
+/* ---------------- featured page-------------------------------------------------*/
+
+.featuredTrips{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(59, 30, 87);
+    justify-content: space-evenly;
+    padding-top: 25px;
 }
