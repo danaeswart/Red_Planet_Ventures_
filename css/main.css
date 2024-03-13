@@ -146,6 +146,52 @@ body{
     display: flex;
     flex-direction: row;
     background-color: rgb(59, 30, 87);
-    justify-content: space-evenly;
-    padding-top: 25px;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+
+.featureImgs img{
+    width: 609px;
+    height: 649px;
+    padding: 8%;
+    margin-left: 10%;
+    
+}
+
+/* paragraphhhh styling of feature flights*/
+.featureTextDiv{
+    margin-left: 12%;
+    margin-right: 10%;
+    font-family: "Poppins";
+}
+
+.featureTextDiv h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+.featureParagraph{
+    color: white;
+    font-size: 18px;
+    margin-top: -30px;
+}
+.ftHeading{
+    
+    font-size: 18px;
+    color: aquamarine;
+    margin-bottom: -25px;
+}
+
+.buttonBook a{
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
