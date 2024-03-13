@@ -191,7 +191,31 @@ body{
     color: white;
     padding: 15px;
     border-radius: 12px;
-    margin-top: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+   
 }
+
+.buttonBook{
+    margin-top: 10%;
+}
+
+.buttonBook a:hover{
+    background-color: rgb(190, 117, 21);
+}
+
+/*
+.buttonBook a:hover{
+   animation-name: bookNowBtn;
+   animation-duration: 0.8s;
+}
+
+@keyframes bookNowBtn {
+    from{
+      background-color: red;
+    }
+    to{
+        background-color: rgb(197, 104, 16);
+    }
+}
+*/
