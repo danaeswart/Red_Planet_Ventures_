@@ -222,6 +222,10 @@ body{
 
 /*------------------------------------------------------------ flights page---------------------------------------------*/
 
+.flightsHeader{
+  
+}
+
 .flightsBackImg{
     
     background-image: url(../assets/images/headerbackBack.png);
@@ -230,14 +234,17 @@ body{
     
     margin: 0px;
     top: 0px;  /* idk why its not heel bo*/
+   
     
 
 }
 
-.flightsBackImg h1{
+.flightsHeading{
     font-family: "Porter Sans Block";
-     font-size: 48px;
+     font-size: 25px;
      color: white;
+     text-align: center;
+    
      
 }
 
