@@ -219,3 +219,27 @@ body{
     }
 }
 */
+
+/*------------------------------------------------------------ flights page---------------------------------------------*/
+
+.flightsBackImg{
+    
+    background-image: url(../assets/images/headerbackBack.png);
+    width: 100%;
+    height:350px; /*--------------ask why my image is sooo zoomed inn---------------------*/
+    
+    margin: 0px;
+    top: 0px;  /* idk why its not heel bo*/
+    
+
+}
+
+.flightsBackImg h1{
+    font-family: "Porter Sans Block";
+     font-size: 48px;
+     color: white;
+     
+}
+
+
+
