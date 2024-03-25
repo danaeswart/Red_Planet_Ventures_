@@ -19,7 +19,7 @@ body{
     float: left;
     width: 266px;
     height: 48px;
-    padding: 10px;
+    padding: 12px;
     
 }
 
@@ -43,6 +43,19 @@ body{
     border-radius: 25px;
     
 }
+
+/*---------------------- search bar-----------------------*/
+
+.headerImage input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 18px;
+   
+  }
+  
 
 /* ---------------------nav bar -- jusst the home f and con-----------------*/
 
@@ -174,18 +187,22 @@ body{
 .featureParagraph{
     color: white;
     font-size: 18px;
+    font-weight: 400;
     margin-top: -30px;
 }
 .ftHeading{
     
     font-size: 18px;
-    color: aquamarine;
+    color: rgb(112, 194, 167);
+    font-weight: 500;
     margin-bottom: -25px;
 }
 
 .buttonBook a{
     text-decoration: none;
     font-family: "Poppins";
+    width: 270px;
+    height: 70px;
     font-size: 18px;
     background-color: red;
     color: white;
@@ -203,6 +220,110 @@ body{
 .buttonBook a:hover{
     background-color: rgb(190, 117, 21);
 }
+
+
+/* --------------------------- travel in style with.... part of home page-------------*/
+
+.shuttles{
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins";
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+}
+
+.shuttles h2{
+    color: rgb(59, 30, 87);
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.shuttleParag{
+    color: gray;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+.shuttlesText{
+    width: 50%;
+    padding: 20px;
+    margin-left: 9%;
+
+}
+
+.shuttleImg{
+    width: 50%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.shuttleImg img{ 
+    width: 609px  ;
+    height: 477px ;
+}
+
+/*------------------- sneak peak freatured flights page-----------------------------*/
+
+.tripsSneakPeak{
+    background-color:rgb(59, 30, 87) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    padding-top: 3%;
+    color: white;
+}
+
+.upcomingTripsText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+   
+}
+.upcomingTripsText h2{
+    font-size: 48px;
+    font-weight: 700;
+  
+   
+   
+   
+}
+.tripContain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Poppins";
+    text-align: center;
+   
+   
+
+}
+
+.upcomingTrips{
+    flex: 10%;
+    padding: 10px;
+    
+ 
+}
+
+.upcomingTrips img{
+    width: 278px;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
 
 /*
 .buttonBook a:hover{
@@ -223,7 +344,7 @@ body{
 /*------------------------------------------------------------ flights page---------------------------------------------*/
 
 .flightsHeader{
-  
+  margin-top: -27px;
 }
 
 .flightsBackImg{
@@ -246,6 +367,17 @@ body{
      text-align: center;
     
      
+}
+
+/* --------------------------------------------CONTACT PAGE ===-----------------------------*/
+
+.map{
+    padding: 20px;
+  
+}
+
+.map iframe{
+    border-radius: 18px;
 }
 
 
