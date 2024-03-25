@@ -46,7 +46,7 @@ body{
 
 /*---------------------- search bar-----------------------*/
 
-.headerImage input[type=text] {
+.searchBar input{
     float: right;
     padding: 6px;
     border: none;
@@ -54,12 +54,16 @@ body{
     margin-right: 16px;
     font-size: 18px;
    
+
+  }
+  .searchBar{
+    background-color: white; /*---------- style needs some work*/
   }
   
 
 /* ---------------------nav bar -- jusst the home f and con-----------------*/
 
-.linksInNav{ /* jy moet uit figure hoe om die nav bar te center always*/
+.linksInNav{ 
     justify-content: center;
     
     text-align: center;
@@ -68,6 +72,10 @@ body{
     
    
 }
+.active{
+    color: rgb(148, 14, 14);  /* ---active class willi werk nie*/
+    
+}
 
 .linksInNav a{
     display: inline;
@@ -75,8 +83,9 @@ body{
     color: rgb(21, 8, 75);
     text-align: center;
     padding: 12px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 15px;
+    font-family: "Poppins";
     
     
 }
@@ -373,6 +382,9 @@ body{
 
 
 /*--------------------footer styling---------------------*/
+footer{
+    padding-top: 3%;
+}
 
 .footerSection{
     display: flex;
@@ -380,6 +392,11 @@ body{
     justify-content: space-evenly;
     align-items: center;
     font-family: "Poppins";
+    padding: 20px;
+}
+
+.footerLogo{
+    width: 25%;
 }
 
 .footerLogo img{
@@ -391,6 +408,63 @@ body{
     color: gray;
     font-size: 16px;
     font-weight: 400;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+}
+.footerLinks h3{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+.footerLinks a{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.footerLinks a:hover{
+    color: rgb(223, 27, 27);
+}
+
+.footerMedia img{
+    width: 77px;
+    height: 77px;
+}
+
+hr{
+    width: 80%;
+    color: gray;
+    left: 10%;
+    right: 10%;
+}
+
+.footerFoot{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: gray;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.footerFloat{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerFloat p{
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 
@@ -420,7 +494,9 @@ body{
     
     background-image: url(../assets/images/headerbackBack.png);
     width: 100%;
-    height:350px; /*--------------ask why my image is sooo zoomed inn---------------------*/
+    height:350px; 
+    object-fit: contain;
+    /*--------------ask why my image is sooo zoomed inn---------------------*/
     
     margin: 0px;
     top: 0px;  /* idk why its not heel bo*/
@@ -440,13 +516,25 @@ body{
 
 /* --------------------------------------------CONTACT PAGE ===-----------------------------*/
 
-.map{
-    padding: 20px;
-  
+.contactBackImg{
+    background-image: url(../assets/images/headerbackBack.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.map iframe{
-    border-radius: 18px;
+.conUs{
+    padding-top: 10%;
+    margin-left: 30%;
+    padding-bottom: 5%;
+   
+}
+
+.conUs p{
+    font-family: "Porter Sans Block";
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
 }
 
 
