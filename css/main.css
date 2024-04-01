@@ -1,8 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     
     margin: 0px;
     padding: 0px;
     overflow-y: scroll;
+
   
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -20,6 +24,8 @@ body::-webkit-scrollbar {
     
 }
 
+
+
 .navImg img{
     position: relative;
     float: left;
@@ -34,8 +40,8 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
+    padding: 5px;
     background-color: white;
     width: 85%;
     height: 75px;
@@ -46,7 +52,7 @@ body::-webkit-scrollbar {
     right: 50%;
     transform: translate(-50%, -50%);
     margin-top: 70px;
-    border-radius: 25px;
+    border-radius: 30px;
     
 }
 
@@ -54,27 +60,53 @@ body::-webkit-scrollbar {
 
 .searchBar input{
     float: right;
-    padding: 6px;
     border: none;
     margin-top: 8px;
-    margin-right: 16px;
+    
     font-size: 18px;
+    
+    margin: 0px;
+    
    
 
   }
   .searchBar{
     background-color: white; /*---------- style needs some work*/
+   width: 25px;
+   margin-left: 230px;
+   margin-right: 20px;
+
+   
   }
+
+  .searchBar input[type=text]{
+    padding: 0px;
+    margin-right: 20px;
+    padding: 9px;
+  }
+
+
+.searchBar input[type=text]:hover{
+    border-color: purple;
+    border-style: solid;
+    border-radius: 12px;
+}
+
+.searchBar input[type=text]:focus{
+    border-color: rgb(75, 221, 197);
+    border-style: solid;
+    border-radius:12px ;
+}
   
 
 /* ---------------------nav bar -- jusst the home f and con-----------------*/
 
 .linksInNav{ 
     justify-content: center;
-    
     text-align: center;
-    width: 100%;
+    width: 80%;
     padding: 15px;
+    margin-left: 0px;
     
    
 }
@@ -473,6 +505,37 @@ hr{
     padding-right: 12px;
 }
 
+/*-------------rocket section -------------------*/
+
+.rocketToTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform .2s;
+    
+}
+
+.rocketToTop img{
+    width: 100px;
+}
+
+.rocketToTop p{
+    font-family: "Poppins";
+    font-size: 18px;
+    color: orangered;
+    font-weight: 500;
+   
+}
+
+/*----------hover animations for rocket---------*/
+.rocketToTop:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
 
 /*
 .buttonBook a:hover{
@@ -800,8 +863,14 @@ hr{
 
 .conUs{
     padding-top: 10%;
-    margin-left: 30%;
-    padding-bottom: 5%;
+
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
    
 }
 
@@ -810,6 +879,32 @@ hr{
     color: white;
     font-size: 48px;
     font-weight: 500;
+    margin-bottom: 25px;
+}
+
+
+
+#conBut a{
+    font-family: "Poppins";
+    
+    text-decoration: none;
+    color: white;
+    
+    font-size: 30px;
+    padding: 4px;
+
+
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#conBut a:hover{
+    color: rgb(70, 11, 126);
+    background-color: white;
 }
  /*--------------------about contact page section-----------*/
 
@@ -951,8 +1046,4 @@ input[type=text], input[type=email], textarea {
 .bound :hover{
     border: 5px solid rebeccapurple;
 }
-
-
-
-
 

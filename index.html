@@ -24,7 +24,7 @@
 
     <body>
         <header>
-            <div class="headerImage">
+            <div class="headerImage" id="homeTop">
                 <!--DIV FOR THE FIRST HEADER adds the backgound image -->
                 <nav class="navBarBackground">  <!-- NAV BAR CONTAINER-->
 
@@ -54,11 +54,11 @@
 
 
         <div class="featuredTrips"> <!--second "page" featured flights-->
-
+    
            
 
                 <div class="featureImgs"><!--img swipy swipee-->
-                    <img src="assets/images/marsSliderClipped1.png">
+                   <img src="assets/images/marsSliderClipped1.png"> 
                 </div>
                  
                 <div class="featureTextDiv"><!-- div of text and button-->
@@ -122,14 +122,17 @@
 
         <div class="tripContain">
             <div class="upcomingTrips">
-                <img src="assets/images/flighhtMars.png">
+                <a href="pages/flights.html"><img src="assets/images/flighhtMars.png"></a>
+                
                 <h3>The Classic Mars Experience</h3>
                 <p>Explore red deserts, ancient relics,
                     low gravity adventures on Mars.</p>
             </div>
 
             <div class="upcomingTrips">
+                <a href="pages/flights.html">
                 <img src="assets/images/flightNeptune.png">
+                </a>
                 <h3>Neptune’s Cosmic Dive</h3>
                 <p>Experience Neptune's mysterious
                     depths in a celestial voyage.
@@ -137,14 +140,18 @@
             </div>
 
             <div class="upcomingTrips">
+                <a href="pages/flights.html">
                 <img src="assets/images/flightJupiter.png">
+                </a>
                 <h3>Jupiter: The Giant’s Journey</h3>
                 <p>Embark on Jupiter and witness the
                     gas giant's majesty.</p>
             </div>
 
             <div class="upcomingTrips">
+                <a href="pages/flights.html">
                 <img src="assets/images/flightSaturn.png">
+                </a>
                 <h3>Ring a Round a Saturn</h3>
                 <p>Explore Saturn's rings, moons, and
                     enigmatic beauty on an odyssey.</p>
@@ -179,6 +186,11 @@
                 <img src="assets/images/smTicktock.png">
                 <img src="assets/images/smFacebook.png">
             </div>
+
+            <a href="#homeTop" class="rocketToTop" >
+                <img src="assets/images/rocket.png">
+                <p>Rocket To Top</p>
+            </a>
         </div>
 
         <hr>
@@ -192,6 +204,8 @@
 
     </footer>
 
+   
+           
         
     </body>
 </html>
