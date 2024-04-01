@@ -524,10 +524,34 @@ hr{
 }
 
 .filterSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color:rgb(59, 30, 87) ;
     width: 100%;
     font-family: "Poppins";
 
+}
+
+.filResultContain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    color: white;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.filterResult{
+    background-color: white;
+    color:rgb(59, 30, 87) ;
+    font-size: 18px;
+    opacity: 80%;
+    padding: 12px;
+    border-radius: 12px;
 }
 
 .filterWithIcon{
@@ -554,6 +578,172 @@ hr{
     width: 2px;
     height: 40px;
 }
+
+
+
+/*=-----------styling for purple section---------*/
+.tripContainer2{
+    background-color:rgb(59, 30, 87) ;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.tripContainer2 h2{
+    color: white;
+   
+}
+
+.pricePurple{
+    color: aquamarine;
+}
+/*=----------------------trip selection and info section-------*/
+.tripContainer{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  
+}
+
+.tripSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins";
+
+
+}
+.tripImg{
+    width: 50%;
+    padding: 8%;
+    padding-right: 6%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.infoContain{
+    display: flex;
+    flex-direction: column;
+    margin-right: 8%;
+ 
+}
+
+.infoContain h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    color: gray;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.price p{
+    margin: 0;
+    margin-right: 5%;
+
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    margin-top: 5px;
+
+}
+
+.rating p{
+    font-size: 13px;
+    color: gray;
+}
+
+.starContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+
+
+}
+.starContainer img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.starHalf{
+    width: 15px !important;
+    
+}
+
+.blueHori{
+    width: 3px;
+    height: 30px;
+    margin-right: 5%;
+}
+
+.tripDescrip{
+    font-weight: 400;
+}
+
+.addCartAndButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.addButton{
+    padding: 20px;
+    border-radius: 10px;
+    width: 40px;
+    color: white;
+    background-color:rgb(59, 30, 87) ;
+    padding-left: 50px;
+    padding-right: 20px;
+    margin-right: 30px;
+
+}
+
+.tripBookBtn{
+    
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.hrLine{
+    width: 100%;
+    color: gray;
+    margin-top: 5%;
+}
+
+.tripInfo{
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.infoAnswers{
+    margin-left: 5%;
+}
+
+
+
 /* --------------------------------------------CONTACT PAGE ===-----------------------------*/
 
 .contactBackImg{
