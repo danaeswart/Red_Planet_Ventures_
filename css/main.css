@@ -6,6 +6,7 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-y: scroll;
+    margin-bottom: 25px;
 
   
 }
@@ -110,10 +111,7 @@ body::-webkit-scrollbar {
     
    
 }
-.active{
-    color: rgb(148, 14, 14);  /* ---active class willi werk nie*/
-    
-}
+
 
 .linksInNav a{
     display: inline;
@@ -124,17 +122,38 @@ body::-webkit-scrollbar {
     font-size: 18px;
     border-radius: 15px;
     font-family: "Poppins";
+  
     
     
 }
+.linksInNav .linkActive{
+    font-size: 22px;
+    color: red;
+}
 
-.linksInNav a:hover{
+/* .linksInNav a:hover{
    
     animation-name: linkAnimation;
     animation-duration: 0.8s;
+} */
+
+.linksInNav a:hover{
+   
+    animation-name: linkAni;
+    animation-duration: 1.5s;
 }
 
-@keyframes linkAnimation { /*makk die animation cooler en maak hom stick*/
+@keyframes linkAni {
+    from{
+        font-size: 18px;
+    }
+    to{
+        font-size: 22px;
+        color: red;
+    }
+}
+
+/* @keyframes linkAnimation { /*makk die animation cooler en maak hom stick
     from{
         background-color: none;
     }
@@ -156,7 +175,7 @@ body::-webkit-scrollbar {
     top: 0px;
    }
  */
-}
+
 
 /* ---------------------bottom font embed------------------*/
 .logoSlogen {
@@ -472,6 +491,10 @@ footer{
 .footerMedia img{
     width: 77px;
     height: 77px;
+}
+
+.footerLinks .footActive{
+    color: red;
 }
 
 hr{
@@ -811,6 +834,15 @@ hr{
     padding-right: 50px;
 
 }
+
+.tripBookBtn:hover{
+    background-color: rgb(118, 207, 177);
+    font-size: 19px;
+    padding: 18px;
+    padding-left: 45px;
+    padding-right: 42px;
+    margin: 0px;
+}
 .hrLine{
     width: 100%;
     color: gray;
@@ -839,6 +871,9 @@ hr{
     margin-top: 8%;
     opacity: 65%;
     
+}
+.viewCart:hover{
+    opacity: 90%;
 }
 
 .viewCart p{
@@ -1020,7 +1055,7 @@ fieldset{
 
 
 input:hover , textarea:hover{
-border: 3px solid rgb(112, 194, 167);;
+border: 3px solid rgb(112, 194, 167);
 }
 
 input:focus , textarea:focus{
@@ -1047,3 +1082,51 @@ input[type=text], input[type=email], textarea {
     border: 5px solid rebeccapurple;
 }
 
+#contactSubmit{
+    padding: 20px;
+    padding-right: 34px;
+    padding-left: 30px;
+    border: none;
+    background-color: red;
+    color: white;
+    width: 50%;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+#contactSubmit:hover{
+    cursor: pointer;
+    background-color: rgb(112, 194, 167);
+}
+
+
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(114, 70, 218, 0.753);
+    font-family: "Poppins";
+    z-index: 2;
+    cursor: pointer;
+    
+}
+  
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  #popupMessage{
+    margin-top: 70px;
+  }

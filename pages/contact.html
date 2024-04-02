@@ -22,17 +22,20 @@
     </head>
 
     <body>
+
+    
+
         <div class="contactBackImg">
             <nav class="navBarBackground">  <!-- NAV BAR CONTAINER-->
 
                 <div class="navImg"><!--logo img-->
-                    <a href="index.html"><img src="../assets/images/logo.png"></a>
+                    <a href="../index.html"><img src="../assets/images/logo.png"></a>
                 </div>
                 
                 <div class="linksInNav"> <!--nav bar links only div-->
                         <a  href="../index.html" >Home</a>
                         <a href="flights.html">Flights</a>
-                        <a href="contact.html" class="active">Contact</a>
+                        <a class="linkActive" href="contact.html" >Contact</a>
                 </div>
 
                 <div class="searchBar"><!-- search bar-->
@@ -79,10 +82,10 @@
                 <p class="ftHeading">CONTACT US THROUGH OUR</p>
                 <h2>SOCIAL MEDIA PAGES</h2>
                 <div class="mediaLinks">
-                    <img src="../assets/images/smInstagram.png">
-                    <img src="../assets/images/smX.png">
-                    <img src="../assets/images/smFacebook.png">
-                    <img src="../assets/images/smTicktock.png">
+                    <a href="https://www.instagram.com/openwindowinstitute/"  target=”_blank”> <img src="../assets/images/smInstagram.png"></a>
+                <a href="https://twitter.com/open_window_"  target=”_blank”><img src="../assets/images/smX.png"></a> 
+                <a href="https://www.tiktok.com/@open_window_" target="_blank"><img src="../assets/images/smTicktock.png"></a>
+                <a href="https://www.facebook.com/theopenwindow" target="_blank"> <img src="../assets/images/smFacebook.png"></a>
                 </div>
 
             </div>
@@ -118,10 +121,15 @@
                     <label>Message</label>
                     <textarea class="bound" placeholder="Hi! I'd like to ask about..." tabindex="4" required></textarea>
                 </fieldset>
-                
-                <div class="buttonBook" id="sub">
-                    <a href="">SUBMIT</a>
-                </div>
+                <fieldset>
+                    <button onclick="on()" name="Submit" type="submit" id="contactSubmit">Submit</button>
+                </fieldset>
+                <div id="overlay" onclick="off()">
+                    <div class="text">MESSAGE SENT!</div>
+                    <div class="text" id="popupMessage">WELL GET BACK TO YOU SHORTLY.</div>
+                  </div>
+        
+            
                 
 
 
@@ -133,7 +141,8 @@
      <footer>
         <div class="footerSection">
             <div class="footerLogo">
-                <img src="../assets/images/logo.png">
+                <a href="../index.html"><img src="../assets/images/logo.png"></a>
+                
                 <p>Offering unforgettable trips to
                     explore planets in our solar
                     system.</p>
@@ -142,14 +151,15 @@
                 <h3>Company</h3>
                 <a href="../index.html">Home</a>
                 <a href="flights.html">Flights</a>
-                <a href="contact.html">Contact Us</a>
+                <a  class="footActive" href="contact.html">Contact Us</a>
             </div>
             <div class="footerMedia">
                 <h3>Social Media Links</h3>
-                <img src="../assets/images/smInstagram.png">
-                <img src="../assets/images/smX.png">
-                <img src="../assets/images/smTicktock.png">
-                <img src="../assets/images/smFacebook.png">
+                <a href="https://www.instagram.com/openwindowinstitute/"  target=”_blank”> <img src="../assets/images/smInstagram.png"></a>
+                <a href="https://twitter.com/open_window_"  target=”_blank”><img src="../assets/images/smX.png"></a> 
+                <a href="https://www.tiktok.com/@open_window_" target="_blank"><img src="../assets/images/smTicktock.png"></a>
+                <a href="https://www.facebook.com/theopenwindow" target="_blank"> <img src="../assets/images/smFacebook.png"></a>
+                  
             </div>
             <a href="#conTop" class="rocketToTop" >
                 <img src="../assets/images/rocket.png">
@@ -169,6 +179,17 @@
     </footer>
 
 
+    <!-- --------small bit a java :) thank you w3scholss you da best--->
+<script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+    </script>
     </body>
 
 </html>
+
